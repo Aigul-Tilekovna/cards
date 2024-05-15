@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-item h2 {
+    margin: 0 0 10px;
+}
+
+.card-item i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.icon-plane::before { content: "✈"; }
+.icon-translate::before { content: "🔤"; }
+.icon-bike::before { content: "🚴"; }
+.icon-boat::before { content: "⛴"; }
+.icon-drive::before { content: "🚗"; }
+.icon-coffee::before { content: "☕"; }
+.icon-gym::before { content: "🏋"; }
+.icon-hottub::before { content: "🛀"; }
